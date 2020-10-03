@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Brian Deutsch",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^5.0.0-alpha2"
+  }
 }
