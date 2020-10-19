@@ -1,11 +1,14 @@
-<section>
-  <div class="container">
-    {{ range .Pages }}
-      <h3>{{ .Title }}</h3>
-      <p>{{ .Date.Format "January 2, 2006" }}</p>
-      <p>{{ .Description }}</p>
-      <p>{{ .Params.Scribbler }}</p>
-      <hr />
-    {{ end }}
-  </div>
-</section>
+{{ define "main" }}
+  <section>
+    <div class="container">
+      {{ range .Pages }}
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Date.Format "January 2, 2006" }}</p>
+        <p>{{ .Description }}</p>
+        <p>{{ .Params.Scribbler }}</p>
+        <hr />
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+

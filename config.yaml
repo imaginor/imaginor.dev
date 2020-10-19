@@ -1,0 +1,17 @@
+---
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "Imaginor Blog"
+
+menu:
+  main:
+  - name: contact
+    url: 'mailto:bgdeutsch@gmail.com'
+    weight: -110
+  - name: linkedin
+    url: 'https://www.linkedin.com/in/briandeutschdev'
+    weight: -110
+  - name: github
+    url: 'https://www.github.com/bgdeutsch'
+    weight: -110
+---
