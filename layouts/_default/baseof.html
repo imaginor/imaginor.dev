@@ -1,10 +1,10 @@
 <!DOCTYPE html>
   {{ partial "head.html" . }}
-  <body>
+  <body class="p-4">
     <main aria-role="main">
       <div class="content-container d-flex">
         {{ partial "sidebar.html" . }}
-        <div>
+        <div class="flex-6">
           {{ block "main" . }}{{ end }}
         </div>
       </div>
