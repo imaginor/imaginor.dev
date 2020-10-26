@@ -1,12 +1,16 @@
 {{ define "main" }}
-  <section>
+  <section class="blog">
     <div class="container">
       {{ range .Pages }}
-        <h3>{{ .Title }}</h3>
-        <p>{{ .Date.Format "January 2, 2006" }}</p>
-        <p>{{ .Description }}</p>
-        <p>{{ .Params.Scribbler }}</p>
-        <hr />
+        <div class="pt-3 border-bottom">
+          <div class="blog-title d-flex justify-content-between align-items-baseline pb-3">
+            <a href="{{ .Permalink }}">
+              <h3 class="text-primary pt-3">{{ .Title }}</h3>
+            </a>
+            <p class="text-dark-grey">{{ .Date.Format "January 2, 2006" }}</p>
+          </div>
+          <p class="pb-5 text-dark-grey">{{ .Description }}</p>
+        </div>
       {{ end }}
     </div>
   </section>
