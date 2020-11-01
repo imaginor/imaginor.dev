@@ -1,2 +1,9 @@
 .blog {
+  .blog-preview:first-of-type {
+    padding: 0 !important;
+  }
+
+  .blog-description {
+    padding-bottom: 1.85rem;
+  }
 }

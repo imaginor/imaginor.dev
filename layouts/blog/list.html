@@ -1,15 +1,15 @@
 {{ define "main" }}
-  <section class="blog">
+  <section class="blog mt-2">
     <div class="container">
       {{ range .Pages }}
-        <div class="pt-3 border-bottom">
-          <div class="blog-title d-flex justify-content-between align-items-baseline pb-3">
+        <div class="blog-preview pt-2 border-bottom">
+          <div class="blog-title d-flex justify-content-between align-items-baseline pb-4">
             <a href="{{ .Permalink }}">
               <h3 class="text-primary pt-3">{{ .Title }}</h3>
             </a>
             <p class="text-dark-grey">{{ .Date.Format "January 2, 2006" }}</p>
           </div>
-          <p class="pb-5 text-dark-grey">{{ .Description }}</p>
+          <p class="text-dark-grey blog-description">{{ .Description }}</p>
         </div>
       {{ end }}
     </div>
