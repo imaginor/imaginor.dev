@@ -3,11 +3,11 @@
     <div class="container">
       {{ range .Pages }}
         <div class="blog-preview pt-2 border-bottom">
-          <div class="blog-title d-flex justify-content-between align-items-baseline pb-4">
-            <a href="{{ .Permalink }}">
-              <h3 class="text-primary pt-3">{{ .Title }}</h3>
+          <div class="blog-title d-flex flex-wrap justify-content-between align-items-baseline pb-4">
+            <a href="{{ .Permalink }}" class="w-100 pb-1">
+              <h2 class="text-primary pt-3">{{ .Title }}</h2>
             </a>
-            <p class="text-dark-grey">{{ .Date.Format "January 2, 2006" }}</p>
+            <p class="text-dark-grey font-15">{{ .Date.Format "January 2, 2006" }}</p>
           </div>
           <p class="text-dark-grey blog-description">{{ .Description }}</p>
         </div>

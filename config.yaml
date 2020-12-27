@@ -1,7 +1,12 @@
 ---
 baseURL: "http://example.org/"
 languageCode: "en-us"
-title: "Imaginor Blog"
+title: "Imaginor.dev"
+
+params:
+  header_sub_title: yet another dev blog | by brian deutsch
+  intro: >
+    I'm Brian Deutsch, a software engineer from New York.  Currently building websites @ Datadog.   Read more about <a href='/blog'>what I'm learning</a>, or shoot me <a href="mailto:bgdeutsch@gmail.com">a message</a>.
 
 menu:
   main:

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
   {{ partial "head.html" . }}
   <body class="p-4">
-    <main aria-role="main">
-      <div class="content-container d-flex">
-        {{ partial "sidebar.html" . }}
-        <div class="px-5">
+    <div class="container">
+      {{ if .Params.header }}
+        {{ partial "header.html" . }}
+      {{ end }}
+      <main aria-role="main">
+        <div class="site-wrapper d-flex">
           {{ block "main" . }}{{ end }}
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
