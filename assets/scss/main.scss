@@ -1,6 +1,7 @@
 @import './variables';
 @import '../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
 @import '../../node_modules/bootstrap/scss/containers.scss';
+@import './darkmode';
 @import './utilities';
 @import './blog';
 
@@ -51,6 +52,7 @@ header {
 
   img {
     margin-top: -2px;
+    cursor: pointer;
   }
 }
 
