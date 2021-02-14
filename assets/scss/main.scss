@@ -58,10 +58,14 @@ header {
 
 .intro-container {
   margin-top: 4rem;
+
+  a {
+    color: $primary;
+  }
 }
 
 .intro {
-  width: 30%;
+  width: 40%;
   font-size: 26px;
 }
 

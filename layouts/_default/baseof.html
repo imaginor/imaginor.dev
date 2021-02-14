@@ -1,3 +1,5 @@
+{{ $mainJs := resources.Get "js/main.js" | minify | fingerprint }}
+
 <!DOCTYPE html>
   {{ partial "head.html" . }}
   <body class="p-4">
@@ -11,5 +13,7 @@
         </div>
       </main>
     </div>
+
+    <script src="{{ $mainJs.Permalink }}" type="text/javascript"></script>
   </body>
 </html>

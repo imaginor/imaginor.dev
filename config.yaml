@@ -19,4 +19,9 @@ menu:
   - name: github
     url: 'https://www.github.com/bgdeutsch'
     weight: -110
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 ---
