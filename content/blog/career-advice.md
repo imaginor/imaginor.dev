@@ -1,6 +1,6 @@
 ---
-title: "Advice for landing your first software engineering job"
-description: "Whether you're a recent bootcamp graduate or self-taught, landing that first dev role is daunting.  These soft tips are part of what I learned along the way after completing General Assembly, and helped to instill confidence as I moved forward in the job search."
+title: "Tips to help land a junior software developer job"
+description: "Breaking into the industry as an engineer can be daunting - I found these tips helped me gain confidence as I navigated the post-bootcamp job hunt."
 draft: false
 date: 2021-05-31
 tags: ['Careers']
