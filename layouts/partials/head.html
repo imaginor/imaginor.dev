@@ -1,5 +1,13 @@
-{{ $scss := resources.Get "scss/main.scss" }}
-{{ $styles := $scss | toCSS | minify | fingerprint }}
+{{ $isLocalServer := .Site.IsServer }}
+{{ $options := (dict "enableSourceMap" true) }}
+{{ $scss := "scss/main.scss" }}
+{{ $styles := "" }}
+
+{{ if $isLocalServer }}
+  {{ $styles = resources.Get $scss | toCSS $options }}
+{{ else }}
+  {{ $styles = resources.Get $scss | toCSS $options | minify | fingerprint }}
+{{ end }}
 
 <head>
   <meta charset="utf-8">

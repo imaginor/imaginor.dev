@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "hugo server -D --disableFastRender"
+    "start": "hugo server -D --disableFastRender",
+    "build": "hugo -d ./public -s ./ -v --minify"
   },
   "author": "Brian Deutsch",
   "license": "MIT",
