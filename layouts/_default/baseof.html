@@ -4,7 +4,7 @@
   {{ partial "head.html" . }}
   <body class="p-4">
     <div class="container px-lg-3">
-      {{ if .Params.header }}
+      {{ if ne .Params.header false }}
         {{ partial "header.html" . }}
       {{ end }}
       <main aria-role="main">
